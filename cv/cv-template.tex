@@ -1,0 +1,107 @@
+% Packages actually used by the CV
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[shortlabels]{enumitem}
+\usepackage{mathpazo} % Palatino text and math
+
+% Page dimensions
+\usepackage[paperheight=11in,
+   paperwidth=8.5in,
+   top=10mm,
+   bottom=20mm,
+   left=26mm,
+   right=26mm]{geometry}
+
+\usepackage[]{parskip} % Paragraph spacing
+
+% Accent color (section headings and links)
+\definecolor{titlecolor}{RGB}{31, 27, 148}
+
+% Links (load last)
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=titlecolor,
+  urlcolor=titlecolor,
+  pdftitle={Yuval Amit -- CV},
+  pdfauthor={Yuval Amit}
+}
+
+% ---------------------------------------------------------------
+% Title block
+% ---------------------------------------------------------------
+\usepackage{titling}
+\pretitle{\huge}
+\posttitle{\par\vspace{0pt}}
+\preauthor{\normalsize}
+\postauthor{\par\vspace{4pt}}
+\renewcommand{\maketitlehookd}{\vspace{-1cm}}
+
+% ---------------------------------------------------------------
+% Section headings
+% ---------------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\color{titlecolor}}{}{0pt}{}[\color{black}\vspace{-2pt}\titlerule]
+\titleformat{\subsection}{\large\color{titlecolor}}{}{0pt}{}[\vspace{-2pt}]
+
+% ---------------------------------------------------------------
+% Lists
+% ---------------------------------------------------------------
+\newlist{cvlist}{itemize}{1}
+\setlist[cvlist]{
+  label={},
+  leftmargin=0pt,
+  labelsep=0.5em,
+  itemsep=2pt,
+  topsep=4pt,
+  parsep=0pt
+}
+
+% ---------------------------------------------------------------
+% \cvline{left}{right}
+%   Left text, a dot leader, and right-aligned text (usually a date).
+%   If the left text is too long it wraps onto further lines
+%   (ragged right), and the dots + date sit on the last line.
+%   There are always at least 2em of dots, so nothing can overflow.
+% ---------------------------------------------------------------
+\newcommand{\cvline}[2]{%
+  {\rightskip=0pt plus 4em\relax\parshape=0 \hangindent=1em\hangafter=1\relax
+   #1\unskip\nobreak\hspace{0.5em}\nobreak
+   \leaders\hbox to 0.45em{\hss.\hss}\hskip 2em plus 1fill\relax
+   \nobreak\hspace{0.5em}\mbox{#2}\par}%
+}
+
+% Indented description paragraph below an entry (skipped if empty)
+\newcommand{\cvdesc}[1]{%
+  \if\relax\detokenize{#1}\relax\else
+    {\vspace{1pt}\leftskip=1em\noindent #1\par}%
+  \fi
+}
+
+% \boldentry{Title}{Date}{Description}
+\newcommand{\boldentry}[3]{%
+  \item \cvline{\textbf{#1}}{#2}\cvdesc{#3}%
+}
+
+% \talk{Talk title}{Venue}{Date}
+%   Title and date on the first line, venue indented below.
+\newcommand{\talk}[3]{%
+  \item \cvline{#2}{#3}\cvdesc{\textit{#1}}%
+  \vspace{2pt}
+}
+
+% \twopart{Role or award}{Organization}{Date}
+\newcommand{\twopart}[3]{%
+  \item \cvline{#1, #2}{#3}%
+}
+
+% \paper[link]{Title}{Status}
+%   Optional first argument: a URL (e.g. the arXiv abstract page),
+%   printed on an indented line below the title.
+\newcommand{\paper}[3][]{%
+  \item \cvline{\textit{#2}}{#3}%
+  \if\relax\detokenize{#1}\relax\else
+    \cvdesc{\href{#1}{#1}}%
+  \fi
+}
