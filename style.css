@@ -57,13 +57,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-main {
-  max-width: 48rem;
-  /* Content sits left of centre. Raise or lower the 6rem to taste;
-     0 pins it flush to the body padding, `auto` re-centres it. */
-  margin-left: min(6rem, 6vw);
-  margin-right: auto;
-}
+main { max-width: 48rem; margin: 0 auto; }
 
 /* ---------- header ---------- */
 
@@ -224,7 +218,6 @@ footer {
 
 @media (max-width: 34rem) {
   body { padding: 2.5rem 1.1rem 4rem; font-size: 1.05rem; }
-  main { margin-left: 0; }
   h1 { font-size: 2.1rem; }
   h2 { font-size: 1.35rem; }
   h3 { font-size: 1.12rem; }
