@@ -112,7 +112,7 @@
       font-weight: 400;
       letter-spacing: .12em;
       text-transform: uppercase;
-      color: var(--muted);
+      /* color: var(--muted); */
     }
 
     p { margin: 0 0 .9rem; }
@@ -150,6 +150,28 @@
 
     ul.friends li { margin-bottom: .3rem; }
     ul.friends li:last-child { margin-bottom: 0; }
+
+    ul.papers {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul.papers li { margin-bottom: 1.4rem; }
+    ul.papers li:last-child { margin-bottom: 0; }
+
+    /* ul.papers .venue {
+      color: var(--muted);
+    } */
+
+    ul.papers .authors,
+    ul.papers .blurb {
+      display: block;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    ul.papers .blurb { margin-top: .15rem; }
 
     .construction {
       margin-top: 3rem;
@@ -197,6 +219,14 @@ Y = the derivative notation of a physicist. <br> <br> -->
       a young mathematician that's always subject to change :)
     </p>
     <h3>Papers</h3>
+    <ul class="papers">
+      <li>
+        <a href="https://arxiv.org/abs/2610.12912">Product and Quotient Set Dominance in Finite Groups</a>
+        <span class="venue">&ndash; Preprint</span>
+        <span class="authors">With Lucas Chen, Christopher Housholder, Joshua Im, Joshua Khan, Steven J. Miller, Mateo Palomares, and Devayani Pradhan</span>
+        <span class="blurb">We proved a criterion for when a random subset of a group is more likely to have a larger product-set or quotient-set. This resolved a conjecture by Miller and Vissuet </span>
+      </li>
+    </ul>
     
   </section>
 
