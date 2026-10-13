@@ -75,8 +75,9 @@ h1 {
   font-size: 1.08rem;
 }
 
-/* consecutive subtitle lines: a new line, not a new paragraph */
-.subtitle + .subtitle { margin-top: .35rem; }
+/* consecutive subtitle lines: a new line, not a new paragraph.
+   0 = normal line spacing; raise it to push the lines apart. */
+.subtitle + .subtitle { margin-top: 0; }
 
 /* .line = a block-level line with no paragraph gap.
    Use instead of <br> or an empty <p> when you want stacked lines. */
