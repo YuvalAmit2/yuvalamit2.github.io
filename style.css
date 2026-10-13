@@ -57,7 +57,13 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-main { max-width: 48rem; margin: 0 auto; }
+main {
+  max-width: 48rem;
+  /* Content sits left of centre. Raise or lower the 6rem to taste;
+     0 pins it flush to the body padding, `auto` re-centres it. */
+  margin-left: min(6rem, 6vw);
+  margin-right: auto;
+}
 
 /* ---------- header ---------- */
 
@@ -74,6 +80,20 @@ h1 {
   color: var(--muted);
   font-size: 1.08rem;
 }
+
+/* consecutive subtitle lines: a new line, not a new paragraph */
+.subtitle + .subtitle { margin-top: .35rem; }
+
+/* .line = a block-level line with no paragraph gap.
+   Use instead of <br> or an empty <p> when you want stacked lines. */
+.line {
+  display: block;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.line + .line { margin-top: .1rem; }
 
 .meta {
   margin: 1rem 0 0;
@@ -165,6 +185,7 @@ ul.friends li:last-child { margin-bottom: 0; }
 }
 
 .blurb { margin-top: .2rem; }
+.blurb + .line { margin-top: .45rem; }
 
 /* ---------- footer ---------- */
 
@@ -203,6 +224,7 @@ footer {
 
 @media (max-width: 34rem) {
   body { padding: 2.5rem 1.1rem 4rem; font-size: 1.05rem; }
+  main { margin-left: 0; }
   h1 { font-size: 2.1rem; }
   h2 { font-size: 1.35rem; }
   h3 { font-size: 1.12rem; }
