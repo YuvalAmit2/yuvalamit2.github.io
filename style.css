@@ -1,0 +1,210 @@
+/* ============================================================
+   Shared stylesheet for yuvalamit2.github.io and the notes page.
+   Lives in the homepage repo and is loaded by both:
+     homepage    <link rel="stylesheet" href="style.css">
+     notes page  <link rel="stylesheet" href="https://yuvalamit2.github.io/style.css">
+   ============================================================ */
+
+/* ------------------------------------------------------------------
+   OPTIONAL: exact mathpazo font on every platform.
+   Download TeX Gyre Pagella from https://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella
+   convert the .otf files to .woff2, put them in a fonts/ folder in this
+   repo, then uncomment the three blocks below.
+
+@font-face {
+  font-family: "TeX Gyre Pagella";
+  src: url("fonts/texgyrepagella-regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "TeX Gyre Pagella";
+  src: url("fonts/texgyrepagella-italic.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "TeX Gyre Pagella";
+  src: url("fonts/texgyrepagella-bold.woff2") format("woff2");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+------------------------------------------------------------------ */
+
+/* ---------- palette and type ---------- */
+
+:root {
+  --bg:         #ffffff;
+  --text:       #111111;
+  --muted:      #3c3c3c;   /* secondary text -- deliberately dark, not grey */
+  --rule:       #d6d6d6;
+  --heading:    #123a63;   /* dark blue, for section headers */
+  --link:       #1a66cc;
+  --link-hover: #0f4ea8;
+
+  /* mathpazo is Palatino; this stack finds the real thing nearly everywhere */
+  --serif: "TeX Gyre Pagella", "Palatino Linotype", "Book Antiqua", Palatino,
+           "URW Palladio L", "P052", "Palatino LT STD", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 4rem 1.25rem 6rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  -webkit-text-size-adjust: 100%;
+}
+
+main { max-width: 48rem; margin: 0 auto; }
+
+/* ---------- header ---------- */
+
+h1 {
+  margin: 0 0 .4rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.meta {
+  margin: 1rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+header {
+  padding-bottom: 2.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* back-link at the top of a subpage */
+.backlink {
+  display: block;
+  margin: 0 0 1.75rem;
+  font-size: 1rem;
+}
+
+/* ---------- sections ---------- */
+
+section {
+  padding-top: 2.75rem;
+  margin-top: 2.75rem;
+  border-top: 1px solid var(--rule);
+}
+
+section:first-of-type { border-top: none; margin-top: 0; }
+
+h2 {
+  margin: 0 0 1rem;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  color: var(--heading);
+}
+
+h3 {
+  margin: 2rem 0 .75rem;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--heading);
+}
+
+p { margin: 0 0 1rem; }
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2.5px;
+}
+
+a:hover, a:focus { color: var(--link-hover); }
+
+/* ---------- lists ---------- */
+
+ul.links,
+ul.friends,
+ul.papers,
+ul.courses {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.links li   { margin-bottom: 1.25rem; }
+ul.papers li  { margin-bottom: 1.75rem; }
+ul.courses li { margin-bottom: 1.5rem; }
+ul.friends li { margin-bottom: .4rem; }
+
+ul.links li:last-child,
+ul.papers li:last-child,
+ul.courses li:last-child,
+ul.friends li:last-child { margin-bottom: 0; }
+
+.desc,
+.authors,
+.blurb {
+  display: block;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.blurb { margin-top: .2rem; }
+
+/* ---------- footer ---------- */
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* ---------- under construction ---------- */
+
+.construction {
+  margin-top: 3.5rem;
+  padding: 1.6rem 1.75rem;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  font-size: 1.02rem;
+}
+
+.construction h2 {
+  margin-bottom: .75rem;
+  font-size: 1.25rem;
+}
+
+.letter {
+  margin: 1.1rem 0 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.letter p { margin-bottom: .45rem; }
+
+/* ---------- small screens ---------- */
+
+@media (max-width: 34rem) {
+  body { padding: 2.5rem 1.1rem 4rem; font-size: 1.05rem; }
+  h1 { font-size: 2.1rem; }
+  h2 { font-size: 1.35rem; }
+  h3 { font-size: 1.12rem; }
+  section { padding-top: 2.25rem; margin-top: 2.25rem; }
+}

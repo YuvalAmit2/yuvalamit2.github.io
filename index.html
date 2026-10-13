@@ -8,189 +8,7 @@
   <link rel="canonical" href="https://yuvalamit2.github.io/">
   <title>Yuval Amit's Webpage</title>
 
-  <style>
-    /* ------------------------------------------------------------------
-       OPTIONAL: exact mathpazo font on every platform.
-       Download TeX Gyre Pagella from https://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella
-       convert the .otf files to .woff2, put them in a fonts/ folder in this
-       repo, then uncomment the two blocks below.
-
-    @font-face {
-      font-family: "TeX Gyre Pagella";
-      src: url("fonts/texgyrepagella-regular.woff2") format("woff2");
-      font-weight: 400; font-style: normal; font-display: swap;
-    }
-    @font-face {
-      font-family: "TeX Gyre Pagella";
-      src: url("fonts/texgyrepagella-italic.woff2") format("woff2");
-      font-weight: 400; font-style: italic; font-display: swap;
-    }
-    @font-face {
-      font-family: "TeX Gyre Pagella";
-      src: url("fonts/texgyrepagella-bold.woff2") format("woff2");
-      font-weight: 700; font-style: normal; font-display: swap;
-    }
-    ------------------------------------------------------------------ */
-
-    :root {
-      --bg:     #ffffff;
-      --text:   #111111;
-      --muted:  #5a5a5a;
-      --rule:   #dddddd;
-      --link:   #1a4d7a;
-      --link-hover: #2f7cb8;
-
-      /* mathpazo is Palatino; this stack finds the real thing nearly everywhere */
-      --serif: "TeX Gyre Pagella", "Palatino Linotype", "Book Antiqua", Palatino,
-               "URW Palladio L", "P052", "Palatino LT STD", Georgia, serif;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      padding: 3.5rem 1.25rem 5rem;
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--serif);
-      font-size: 1.08rem;
-      line-height: 1.7;
-      -webkit-text-size-adjust: 100%;
-    }
-
-    main { max-width: 48rem; margin: 0 auto; }
-
-    h1 {
-      margin: 0 0 .35rem;
-      font-size: 2.35rem;
-      font-weight: 700;
-      letter-spacing: -0.005em;
-    }
-
-    .subtitle {
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    .meta {
-      margin: .85rem 0 0;
-      color: var(--muted);
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-
-    .meta a { color: var(--link); }
-
-    header {
-      padding-bottom: 1.75rem;
-      border-bottom: 1px solid var(--rule);
-    }
-
-    section {
-      padding-top: 2rem;
-      margin-top: 2rem;
-      border-top: 1px solid var(--rule);
-    }
-
-    section:first-of-type { border-top: none; margin-top: 0; }
-
-    h2 {
-      margin: 0 0 .65rem;
-      font-family: var(--serif);
-      font-size: .95rem;
-      font-weight: 700;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--text);
-    }
-
-    h3 {
-      margin: 1.6rem 0 .5rem;
-      font-family: var(--serif);
-      font-size: .9rem;
-      font-weight: 400;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      /* color: var(--muted); */
-    }
-
-    p { margin: 0 0 .9rem; }
-    p:last-child { margin-bottom: 0; }
-
-    a {
-      color: var(--link);
-      text-decoration: underline;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 2.5px;
-    }
-
-    a:hover, a:focus { color: var(--link-hover); }
-
-    ul.links {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    ul.links li { margin-bottom: 1rem; }
-    ul.links li:last-child { margin-bottom: 0; }
-
-    ul.links .desc {
-      display: block;
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    ul.friends {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    ul.friends li { margin-bottom: .3rem; }
-    ul.friends li:last-child { margin-bottom: 0; }
-
-    ul.papers {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    ul.papers li { margin-bottom: 1.4rem; }
-    ul.papers li:last-child { margin-bottom: 0; }
-
-    /* ul.papers .venue {
-      color: var(--muted);
-    } */
-
-    ul.papers .authors,
-    ul.papers .blurb {
-      display: block;
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    ul.papers .blurb { margin-top: .15rem; }
-
-    .construction {
-      margin-top: 3rem;
-      padding: 1.4rem 1.5rem;
-      background: var(--bg);
-      border: 1px solid var(--rule);
-      font-size: 1rem;
-    }
-
-    .construction h2 { margin-bottom: .6rem; }
-
-    .letter {
-      margin: 1rem 0 0;
-      color: var(--muted);
-      font-style: italic;
-    }
-
-    .letter p { margin-bottom: .45rem; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -199,6 +17,7 @@
   <header>
     <h1>Yuval Amit</h1>
     <p class="subtitle">Undergraduate student, Department of Mathematics, University of Maryland</p>
+    <p>  </p>
     <p class="subtitle"> yamit | at | umd | dot | edu </p>
     <p class="meta">
 <!-- yamit X umd Y edu, where 
@@ -207,7 +26,6 @@ X = an acronym for "algebraic topology", and
 <br>
 Y = the derivative notation of a physicist. <br> <br> -->
 
-      
       <a href="cv/cv.pdf">Curriculum Vitae</a>
     </p>
   </header>
@@ -218,25 +36,25 @@ Y = the derivative notation of a physicist. <br> <br> -->
       I'm interested in algebraic number theory and arithmetic geometry, but as
       a young mathematician that's always subject to change :)
     </p>
+
     <h3>Papers</h3>
     <ul class="papers">
       <li>
         <a href="https://arxiv.org/abs/2610.12912">Product and Quotient Set Dominance in Finite Groups</a>
         <span class="venue">&ndash; Preprint</span>
         <span class="authors">With Lucas Chen, Christopher Housholder, Joshua Im, Joshua Khan, Steven J. Miller, Mateo Palomares, and Devayani Pradhan</span>
-        <span class="blurb">We proved a criterion for when a random subset of a group is more likely to have a larger product-set or quotient-set. This resolved a conjecture by Miller and Vissuet </span>
+        <span class="blurb">We proved a criterion for when a random subset of a group is more likely to have a larger product-set or quotient-set. This resolved a conjecture by Miller and Vissuet.</span>
       </li>
     </ul>
-    
   </section>
 
   <section>
     <h2>LaTeX</h2>
     <p>
-      <a href="/yuvals-notes/">Course Notes</a> – my typed lecture notes from courses I've taken.
+      <a href="/yuvals-notes/">Course Notes</a> &ndash; my typed lecture notes from courses I've taken.
     </p>
     <p>
-      <a href="https://github.com/YuvalAmit2/yalatex">LaTeX Template</a> – the LaTeX template I've developed for my obsessive liveTeXing. It is currently, and forever will be, in development
+      <a href="https://github.com/YuvalAmit2/yalatex">LaTeX Template</a> &ndash; the LaTeX template I've developed for my obsessive liveTeXing. It is currently, and forever will be, in development.
     </p>
   </section>
 
