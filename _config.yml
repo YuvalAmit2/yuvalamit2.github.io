@@ -1,0 +1,15 @@
+# Jekyll configuration for yuvalamit2.github.io
+# GitHub Pages builds the site with Jekyll automatically on every push to main.
+
+title: Yuval Amit
+url: https://yuvalamit2.github.io
+
+# Every page uses the default layout unless it says otherwise.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md

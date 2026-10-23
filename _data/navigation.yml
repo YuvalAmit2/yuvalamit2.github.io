@@ -1,0 +1,13 @@
+# Page links in the header, left to right.
+
+- title: Research
+  url: /research/
+
+- title: Notes
+  url: /notes/
+
+- title: Outreach
+  url: /outreach/
+
+- title: Extras
+  url: /extras/
