@@ -22,7 +22,7 @@
 {% include header.html %}
 
   <section>
-    <h2 class="page-title">{% if page.heading == "LaTeX" %}{% include latex.html %}{% else %}{{ page.heading }}{% endif %}</h2>
+    <h2 class="page-title">{{ page.heading }}</h2>
 {{ content }}
   </section>
 

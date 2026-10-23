@@ -1,12 +1,10 @@
 # Page links in the header, left to right.
-# `logo: latex` swaps the text for the typeset LaTeX logo.
 
 - title: Research
   url: /research/
 
-- title: LaTeX
-  url: /latex/
-  logo: latex
+- title: Notes
+  url: /notes/
 
 - title: Outreach
   url: /outreach/

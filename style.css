@@ -245,26 +245,6 @@ ul.friends li:last-child { margin-bottom: 0; }
   letter-spacing: -0.01em;
 }
 
-/* the LaTeX logo, typeset the way \LaTeX does it */
-.latex {
-  font-family: var(--serif);
-  white-space: nowrap;
-}
-
-.latex .la {
-  font-size: .72em;
-  vertical-align: .28em;
-  margin-left: -.24em;
-  margin-right: -.12em;
-}
-
-.latex .te {
-  position: relative;
-  top: .22em;
-  margin-left: -.1667em;
-  margin-right: -.125em;
-}
-
 /* homepage: text on the left, photo on the right */
 .about {
   display: flex;
@@ -297,12 +277,6 @@ ul.friends li:last-child { margin-bottom: 0; }
   text-align: center;
 }
 
-/* placeholder text still to be written */
-.todo {
-  color: #9a3b2a;
-  font-style: italic;
-}
-
 /* term labels and bulleted lists (Outreach page) */
 .term {
   margin: 1.4rem 0 .3rem;
@@ -320,7 +294,7 @@ ul.bulleted li:last-child { margin-bottom: 0; }
 /* a parenthetical remark in muted text */
 .aside { color: var(--muted); }
 
-/* semester headings and closing note (LaTeX page) */
+/* semester headings, source note and template blurb (Notes page) */
 h4.semester {
   margin: 1.9rem 0 .7rem;
   font-size: 1.08rem;
@@ -329,9 +303,7 @@ h4.semester {
 }
 
 .source-note {
-  margin-top: 2.5rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--rule);
+  margin-top: 1.75rem;
   color: var(--muted);
   font-size: 1rem;
 }

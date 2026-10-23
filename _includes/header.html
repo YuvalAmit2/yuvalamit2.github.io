@@ -4,7 +4,7 @@
     <nav class="site-nav" aria-label="Site">
       {%- for item in site.data.navigation %}
       <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>
-        {%- if item.logo == "latex" %}{% include latex.html %}{% else %}{{ item.title }}{% endif -%}
+        {{- item.title -}}
       </a>
       {%- endfor %}
     </nav>
