@@ -2,7 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://yuvalamit2.github.io/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://yuvalamit2.github.io/research/</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://yuvalamit2.github.io/latex/</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://yuvalamit2.github.io/outreach/</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://yuvalamit2.github.io/extras/</loc>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://yuvalamit2.github.io/yuvals-notes/</loc>

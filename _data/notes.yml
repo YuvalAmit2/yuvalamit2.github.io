@@ -1,0 +1,48 @@
+# Course notes listed on the LaTeX page, newest semester first.
+# The PDFs live in the yuvals-notes repository, served at /yuvals-notes/.
+# To add a course: add an entry under the right semester (or a new semester block).
+
+- semester: Fall 2026 (In Progress)
+  courses:
+    - title: "MATH730: Algebraic Topology I"
+      pdf: /yuvals-notes/math730-notes/math730-notes.pdf
+      blurb: "CW complexes; fundamental group; covering spaces; simplicial, singular, and cellular homology."
+      instructor: Or Hershkovitz
+      book: Algebraic Topology
+      author: Hatcher
+    - title: "MATH606: Complex Algebraic Geometry"
+      pdf: /yuvals-notes/math606-notes/math606-notes.pdf
+      blurb: "Riemann surfaces; elliptic functions; the Riemann surface of an algebraic function; Čech cohomology; vector bundles; divisors; Riemann–Roch; Serre duality."
+      instructor: Harry Tamvakis
+      book: Compact Riemann Surfaces
+      author: Narasimhan
+    - title: "STAT410: Intro to Probability Theory"
+      pdf: /yuvals-notes/stat410-notes/STAT410-Notes.pdf
+      blurb: "Basic facts about σ-algebras and probability measures; conditional probability; random variables; expectation; central limit theorem; law of large numbers."
+      instructor: Mestiyage D. Gunatilleka
+      book: Intro to Probability
+      author: Anderson
+
+- semester: Spring 2026
+  courses:
+    - title: "MATH601: Abstract Algebra II"
+      pdf: /yuvals-notes/math601-notes/math601-notes.pdf
+      blurb: "Exterior powers; FGMs over PIDs; bilinear forms; categories; Yoneda's lemma; projective, injective, and flat modules; homological algebra; Ext and Tor; Galois theory; solvability by radicals; representations; Schur's lemma; character tables and orthogonality relations; Burnside's theorem; additional topics in rep. theory."
+      instructor: Harry Tamvakis
+      book: Abstract Algebra
+      author: Dummit and Foote
+
+- semester: Fall 2025
+  courses:
+    - title: "MATH600: Abstract Algebra I"
+      pdf: /yuvals-notes/math600-notes/math600-notes.pdf
+      blurb: "Vector spaces; universal properties; groups; the class equation; Sylow theorems; finite simple groups; semidirect products; free and Coxeter groups; rings; various types of domains; CRT; Noetherian rings; classical algebraic geometry; Nullstellensatz; ideal-variety correspondence; modules and algebras; tensor products; tensor and symmetric algebras"
+      instructor: Harry Tamvakis
+      book: Abstract Algebra
+      author: Dummit and Foote
+    - title: "MATH407: Advanced Number Theory"
+      pdf: /yuvals-notes/math407-notes/math407-notes.pdf
+      blurb: "Finite fields; Chevalley-Warning; quadratic reciprocity; p-adic numbers; Hensel's lemma; the Hilbert symbol; characters; Dirichlet's theorem"
+      instructor: Niranjan Ramachandran
+      book: A Course in Arithmetic
+      author: Serre

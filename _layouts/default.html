@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- if page.url == "/" %}
+  <meta name="google-site-verification" content="y4C8KXmw-y_Z_wYMqg5ahL78U_UIVcQGjCzWV9e_atk" />
+  {%- endif %}
+  <meta name="description" content="{{ page.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:site_name" content="Yuval Amit">
+  {%- if page.url == "/" %}
+  {% include schema.html %}
+  {%- endif %}
+</head>
+
+<body>
+<main>
+
+{% include header.html %}
+
+  <section>
+    <h2 class="page-title">{% if page.heading == "LaTeX" %}{% include latex.html %}{% else %}{{ page.heading }}{% endif %}</h2>
+{{ content }}
+  </section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+---
+title: LaTeX – Yuval Amit
+heading: LaTeX
+description: Yuval Amit's LaTeX template and typed lecture notes from courses at the University of Maryland
+---
+    <p>
+      <a href="https://github.com/YuvalAmit2/yalatex" target="_blank" rel="noopener">LaTeX Template</a>:
+      One of my favorite activities is liveTeXing, and improving my template and setup.
+      I most often use VSCode + LaTeX Workshop. I'm currently writing a tutorial on how
+      to use it, so for now reach out if you have questions.
+    </p>
+
+    <h3>Course Notes</h3>
+    <p>
+      Lecture notes from some courses I've taken over the years.
+      Feel free to reach out if you find a typo (big or small).
+    </p>
+
+    {%- comment %} The course list comes from _data/notes.yml {% endcomment %}
+    {%- for term in site.data.notes %}
+
+    <h4 class="semester">{{ term.semester }}</h4>
+    <ul class="courses">
+      {%- for course in term.courses %}
+      <li>
+        <a href="{{ course.pdf }}" target="_blank" rel="noopener">{{ course.title }}</a>
+        <span class="blurb">{{ course.blurb }}</span>
+        <span class="line">Instructor: {{ course.instructor }}</span>
+        <span class="line">Book: <i>{{ course.book }}</i>, {{ course.author }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- endfor %}
+
+    <p class="source-note">
+      The source code for these notes can be found in
+      <a href="https://github.com/YuvalAmit2/yuvals-notes" target="_blank" rel="noopener">this repository</a>.
+    </p>

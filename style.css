@@ -182,6 +182,160 @@ ul.friends li:last-child { margin-bottom: 0; }
 .blurb { margin-top: .2rem; }
 .blurb + .line { margin-top: .45rem; }
 
+/* ---------- multi-page layout ----------
+   Everything in this block uses its own class names, so the notes page
+   (which shares this stylesheet) is unaffected. */
+
+/* name on the left, page navigation on the right */
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;   /* nav lines up with the top of the name */
+  justify-content: space-between;
+  column-gap: 2rem;
+  row-gap: .3rem;
+  margin-bottom: .4rem;
+}
+
+.masthead h1 { margin: 0; }
+
+.masthead h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.masthead h1 a:hover,
+.masthead h1 a:focus { color: var(--heading); }
+
+.site-nav {
+  display: flex;
+  column-gap: 1.4rem;
+  padding-top: .3rem;   /* fallback nudge for browsers without text-box */
+  font-size: 1.12rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.site-nav a { text-decoration: none; }
+
+.site-nav a:hover,
+.site-nav a:focus { text-decoration: underline; }
+
+/* Align the top of the nav letters with the top of the capital letters in the
+   name, whatever font the visitor's computer uses (Chrome, Edge, Safari). */
+@supports (text-box: trim-start cap alphabetic) {
+  .masthead h1,
+  .site-nav { text-box: trim-start cap alphabetic; }
+  .site-nav { padding-top: 0; }
+}
+
+/* the page you're currently on */
+.site-nav a[aria-current="page"] {
+  color: var(--heading);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+/* big centred title at the top of each page */
+.page-title {
+  margin: 0 0 2rem;
+  font-size: 2.1rem;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+/* the LaTeX logo, typeset the way \LaTeX does it */
+.latex {
+  font-family: var(--serif);
+  white-space: nowrap;
+}
+
+.latex .la {
+  font-size: .72em;
+  vertical-align: .28em;
+  margin-left: -.24em;
+  margin-right: -.12em;
+}
+
+.latex .te {
+  position: relative;
+  top: .22em;
+  margin-left: -.1667em;
+  margin-right: -.125em;
+}
+
+/* homepage: text on the left, photo on the right */
+.about {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.about-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.portrait {
+  flex: 0 0 9.5rem;
+  margin: .3rem 0 0;
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.portrait figcaption {
+  margin-top: .4rem;
+  color: #6b6b6b;
+  font-size: .85rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* placeholder text still to be written */
+.todo {
+  color: #9a3b2a;
+  font-style: italic;
+}
+
+/* term labels and bulleted lists (Outreach page) */
+.term {
+  margin: 1.4rem 0 .3rem;
+  font-weight: 700;
+}
+
+ul.bulleted {
+  margin: 0;
+  padding-left: 1.35rem;
+}
+
+ul.bulleted li { margin-bottom: .3rem; }
+ul.bulleted li:last-child { margin-bottom: 0; }
+
+/* a parenthetical remark in muted text */
+.aside { color: var(--muted); }
+
+/* semester headings and closing note (LaTeX page) */
+h4.semester {
+  margin: 1.9rem 0 .7rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.source-note {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 1rem;
+}
+
 /* ---------- footer ---------- */
 
 footer {
@@ -192,29 +346,6 @@ footer {
   font-size: 1rem;
 }
 
-/* ---------- under construction ---------- */
-
-.construction {
-  margin-top: 3.5rem;
-  padding: 1.6rem 1.75rem;
-  background: var(--bg);
-  border: 1px solid var(--rule);
-  font-size: 1.02rem;
-}
-
-.construction h2 {
-  margin-bottom: .75rem;
-  font-size: 1.25rem;
-}
-
-.letter {
-  margin: 1.1rem 0 0;
-  color: var(--muted);
-  font-style: italic;
-}
-
-.letter p { margin-bottom: .45rem; }
-
 /* ---------- small screens ---------- */
 
 @media (max-width: 34rem) {
@@ -223,4 +354,13 @@ footer {
   h2 { font-size: 1.35rem; }
   h3 { font-size: 1.12rem; }
   section { padding-top: 2.25rem; margin-top: 2.25rem; }
+  .page-title { font-size: 1.75rem; margin-bottom: 1.5rem; }
+  /* on phones: name, then the subtitle lines, then the nav underneath */
+  header:has(.masthead) { display: flex; flex-direction: column; }
+  .masthead { display: contents; }
+  .masthead h1 { margin-bottom: .4rem; }
+  .site-nav { order: 1; margin-top: 1rem; padding-top: 0; font-size: 1.05rem; }
+  .about { flex-direction: column-reverse; align-items: center; gap: 1.75rem; }
+  .about-text { align-self: stretch; }
+  .portrait { flex-basis: auto; width: 9rem; }
 }
