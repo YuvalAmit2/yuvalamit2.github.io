@@ -43,3 +43,10 @@ desktop.ini
 *.alg
 *.xdv
 *.dvi
+
+# ---- Jekyll ----
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
