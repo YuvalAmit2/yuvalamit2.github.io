@@ -1,0 +1,10 @@
+---
+title: Research
+---
+
+I'm interested in algebraic number theory and arithmetic geometry, but as
+a young mathematician that's always subject to change :)
+
+## Papers
+
+{{< papers papers.bib >}}

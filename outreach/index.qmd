@@ -1,0 +1,21 @@
+---
+title: Outreach
+---
+
+I love mathematics for many reasons, but I wouldn't be pursuing academia if math
+wasn't collaborative. Don't hesitate to reach out if you want to chat!
+
+## Organization
+
+I love to organize events/seminars/courses which use math to bring people together
+(usually to learn more math). Here's a list of things that are running currently or soon.
+Feel free to reach out to me if you have questions about them.
+
+**Spring ’27**
+
+- UMD MATH808S – Selected Topics in Algebra; Varieties over finite fields
+  [(I'm not running this course, I just helped organize it)]{.remark}
+
+**Fall ’26**
+
+- UMD Lean Seminar

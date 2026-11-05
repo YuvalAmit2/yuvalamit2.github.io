@@ -1,0 +1,35 @@
+project:
+  type: website
+  # Files copied to the site as-is
+  resources:
+    - style.css        # still used by the yuvals-notes page; keep at this address
+    - cv/
+    - robots.txt
+
+website:
+  title: "Yuval Amit"
+  site-url: https://yuvalamit2.github.io
+  description: "Yuval Amit is a fourth year undergraduate mathematician at the University of Maryland"
+  search: false
+  navbar:
+    right:
+      - text: Research
+        href: research/index.qmd
+      - text: Notes
+        href: notes/index.qmd
+      # - text: Outreach
+      #   href: outreach/index.qmd
+      - text: Miscellany
+        href: miscellany/index.qmd
+
+# The {{< papers >}} shortcode used on the Research page
+shortcodes:
+  - _papers.lua
+
+format:
+  html:
+    theme: cosmo
+    css: site.css
+    mainfont: '"TeX Gyre Pagella", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif'
+    link-external-newwindow: true
+    link-external-icon: false

@@ -1,0 +1,48 @@
+---
+title: About Me
+include-in-header:
+  - text: |
+      <meta name="google-site-verification" content="y4C8KXmw-y_Z_wYMqg5ahL78U_UIVcQGjCzWV9e_atk" />
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yuval Amit",
+        "url": "https://yuvalamit2.github.io/",
+        "jobTitle": "Undergraduate student in Mathematics",
+        "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Maryland" },
+        "knowsAbout": ["Algebraic number theory", "Arithmetic geometry"],
+        "sameAs": ["https://github.com/YuvalAmit2"]
+      }
+      </script>
+---
+
+::: {.subtitle-lines}
+Undergraduate math major\
+Department of Mathematics, University of Maryland\
+yamit \| at \| umd \| dot \| edu
+:::
+
+<!-- yamit X umd Y edu, where
+X = an acronym for "algebraic topology", and
+Y = the derivative notation of a physicist. -->
+
+:::: {.about}
+
+::: {.about-text}
+I am a 4th-year mathematics student at the University of Maryland (UMD).
+My primary interests are algebraic number theory and arithmetic geometry.
+I love teaching math and communicating its beauty.
+
+I also enjoy watching theater (*Cabaret*, *Falsettos*), endlessly customizing my
+LaTeX template ([github](https://github.com/YuvalAmit2/yalatex)), playing board games
+(*Ticket to Ride*, *Set*), and editing Wikipedia.
+
+[My CV](/cv/cv.pdf){target="_blank"}
+:::
+
+::: {.about-photo}
+![Herstmonceux, UK](images/yuval-owl.jpg){fig-alt="Yuval with an owl perched on his shoulder"}
+:::
+
+::::

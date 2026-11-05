@@ -44,9 +44,8 @@ desktop.ini
 *.xdv
 *.dvi
 
-# ---- Jekyll ----
+# ---- Quarto ----
+/.quarto/
 _site/
-.jekyll-cache/
-.jekyll-metadata
-.bundle/
-vendor/
+
+**/*.quarto_ipynb

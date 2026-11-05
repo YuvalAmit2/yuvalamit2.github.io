@@ -1,0 +1,31 @@
+/* Personal styling on top of the Quarto theme.
+   (style.css is the old stylesheet, kept only for the yuvals-notes page.) */
+
+/* --- homepage --- */
+.subtitle-lines { color: #555; line-height: 1.5; margin-bottom: 1.75rem; }
+
+.about { display: flex; gap: 2.5rem; align-items: flex-start; }
+.about-text { flex: 1 1 auto; min-width: 0; }
+.about-photo { flex: 0 0 10rem; }
+.about-photo figure { margin: .3rem 0 0; }
+.about-photo figcaption { font-size: .85rem; color: #6b6b6b; text-align: center; }
+
+@media (max-width: 576px) {
+  .about { flex-direction: column-reverse; align-items: center; gap: 1.5rem; }
+  .about-photo { flex-basis: auto; width: 9rem; }
+}
+
+/* --- papers (Research page) --- */
+.paper { margin-bottom: 1.6rem; }
+.paper-title { font-size: 1.06em; }
+.paper-authors,
+.paper-venue { color: #6b6b6b; font-size: .92em; }
+.paper-blurb { margin-top: .2rem; }
+
+/* --- lists of entries: courses, links --- */
+.entry { margin-bottom: 1.25rem; }
+.entry p { color: #555; }
+.source-note { color: #6b6b6b; margin-top: 1.5rem; }
+
+/* --- misc --- */
+.remark { color: #6b6b6b; }
