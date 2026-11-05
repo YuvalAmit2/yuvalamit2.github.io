@@ -33,3 +33,4 @@ format:
     mainfont: '"TeX Gyre Pagella", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif'
     link-external-newwindow: true
     link-external-icon: false
+    anchor-sections: false

@@ -35,7 +35,7 @@ My primary interests are algebraic number theory and arithmetic geometry.
 I love teaching math and communicating its beauty.
 
 I also enjoy watching theater (*Cabaret*, *Falsettos*), endlessly customizing my
-LaTeX template ([github](https://github.com/YuvalAmit2/yalatex)), playing board games
+LaTeX template ([yalatex](https://github.com/YuvalAmit2/yalatex)), playing board games
 (*Ticket to Ride*, *Set*), and editing Wikipedia.
 
 [My CV](/cv/cv.pdf){target="_blank"}
