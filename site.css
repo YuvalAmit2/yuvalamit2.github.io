@@ -1,11 +1,25 @@
 /* Personal styling on top of the Quarto theme.
    (style.css is the old stylesheet, kept only for the yuvals-notes page.) */
 
-/* --- colors: change them here --- */
+/* --- general styles --- */
 :root {
   --bs-body-color: #111;
   --gray-dark:  #28282a;      /* secondary text: subtitles, entry descriptions */
   --gray-light: rgb(51, 51, 52);   /* tertiary text: captions, paper authors/venue, notes */
+  --bs-body-bg: #ffffff;  /* background color */
+}
+
+/* Navbar styles */
+#quarto-header .navbar {
+  --bs-navbar-color:        #111;     /* the page links */
+  --bs-navbar-active-color: #2761e3;  /* the link for the page you're on */
+  --bs-navbar-hover-color:  #2761e3;  /* a link while the mouse is over it */
+  --bs-navbar-brand-color:  #111;   /* "Yuval Amit" on the left */
+  font-weight: 700; 
+  & .navbar-title {
+    font-weight: 700;                 /* bold "Yuval Amit" */
+  }
+  background-color: #cbd2ee;    /* background color */
 }
 
 /* Links */
@@ -16,16 +30,6 @@ a:hover {
   text-decoration: underline;
 }
 
-#quarto-header .navbar {
-  --bs-navbar-color:        #111;     /* the page links */
-  --bs-navbar-active-color: #2761e3;  /* the link for the page you're on */
-  --bs-navbar-hover-color:  #2761e3;  /* a link while the mouse is over it */
-  --bs-navbar-brand-color:  #111;   /* "Yuval Amit" on the left */
-  font-weight: 700; 
-  & .navbar-title {
-    font-weight: 700;                 /* bold "Yuval Amit" */
-  }
-}
 /* --- homepage --- */
 .subtitle-lines { color: var(--gray-dark); line-height: 1.5; margin-bottom: 1.75rem; }
 
@@ -50,6 +54,12 @@ a:hover {
 /* --- lists of entries: courses, links --- */
 .entry { margin-bottom: 1.25rem; }
 .entry p { color: var(--gray-dark); }
+/* --- courses (Notes page) --- */
+.course { margin-bottom: 1.3rem; }
+.course p { margin-bottom: 0; color: var(--gray-dark); }
+/* .course p:first-child { line-height: 1.2; }   tighter gap between lines 1 and 2 */
+.course p + p { margin-top: .1rem; }          /* space between lines 2 and 3 */
+.course-info { display: block; margin-left: 0em; font-size: .85em; color: var(--gray-light); }
 .source-note { color: var(--gray-light); margin-top: 1.5rem; }
 
 /* --- misc --- */

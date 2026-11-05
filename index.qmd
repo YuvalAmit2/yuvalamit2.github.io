@@ -1,5 +1,5 @@
 ---
-title: About Me
+title: Yuval Amit
 include-in-header:
   - text: |
       <meta name="google-site-verification" content="y4C8KXmw-y_Z_wYMqg5ahL78U_UIVcQGjCzWV9e_atk" />
@@ -17,28 +17,31 @@ include-in-header:
       </script>
 ---
 
+<!-- ## Info -->
+
 ::: {.subtitle-lines}
 Undergraduate math major\
 Department of Mathematics, University of Maryland\
-yamit \| at \| umd \| dot \| edu
+yamit \| at \| umd \| dot \| edu\
+[CV](/cv/cv.pdf){target="_blank"}
 :::
 
 <!-- yamit X umd Y edu, where
 X = an acronym for "algebraic topology", and
 Y = the derivative notation of a physicist. -->
 
+## About Me
+
 :::: {.about}
 
 ::: {.about-text}
-I am a 4th-year mathematics student at the University of Maryland (UMD).
+I am a fourth-year mathematics student at the University of Maryland (UMD).
 My primary interests are algebraic number theory and arithmetic geometry.
 I love teaching math and communicating its beauty.
 
 I also enjoy watching theater (*Cabaret*, *Falsettos*), endlessly customizing my
 LaTeX template ([yalatex](https://github.com/YuvalAmit2/yalatex)), playing board games
 (*Ticket to Ride*, *Set*), and editing Wikipedia.
-
-[My CV](/cv/cv.pdf){target="_blank"}
 :::
 
 ::: {.about-photo}
