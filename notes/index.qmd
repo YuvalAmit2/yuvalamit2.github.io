@@ -7,13 +7,12 @@ title: Notes
 Lecture notes from some courses I've taken over the years.
 Feel free to reach out if you find a typo (big or small).
 
-#### Fall 2026 (In Progress)
+#### **Fall 2026 (In Progress)**
 
 ::: {.entry}
-[MATH730: Algebraic Topology I](/yuvals-notes/math730-notes/math730-notes.pdf){target="_blank"}\
-CW complexes; fundamental group; covering spaces; simplicial, singular, and cellular homology.\
-Instructor: Or Hershkovitz\
-Book: *Algebraic Topology*, Hatcher
+[MATH730: Algebraic Topology I](/yuvals-notes/math730-notes/math730-notes.pdf){target="_blank"} --- Or Hershkovitz \
+**Topics:** CW complexes; fundamental group; covering spaces; simplicial, singular, and cellular homology.\
+*Book: Algebraic Topology, Hatcher*
 :::
 
 ::: {.entry}
@@ -30,7 +29,7 @@ Instructor: Mestiyage D. Gunatilleka\
 Book: *Intro to Probability*, Anderson
 :::
 
-#### Spring 2026
+#### **Spring 2026**
 
 ::: {.entry}
 [MATH601: Abstract Algebra II](/yuvals-notes/math601-notes/math601-notes.pdf){target="_blank"}\
@@ -39,7 +38,7 @@ Instructor: Harry Tamvakis\
 Book: *Abstract Algebra*, Dummit and Foote
 :::
 
-#### Fall 2025
+#### **Fall 2025**
 
 ::: {.entry}
 [MATH600: Abstract Algebra I](/yuvals-notes/math600-notes/math600-notes.pdf){target="_blank"}\

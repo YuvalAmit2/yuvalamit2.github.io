@@ -8,6 +8,14 @@
   --gray-light: rgb(51, 51, 52);   /* tertiary text: captions, paper authors/venue, notes */
 }
 
+/* Links */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 #quarto-header .navbar {
   --bs-navbar-color:        #111;     /* the page links */
   --bs-navbar-active-color: #2761e3;  /* the link for the page you're on */
