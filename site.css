@@ -1,14 +1,31 @@
 /* Personal styling on top of the Quarto theme.
    (style.css is the old stylesheet, kept only for the yuvals-notes page.) */
 
+/* --- colors: change them here --- */
+:root {
+  --bs-body-color: #111;
+  --gray-dark:  #28282a;      /* secondary text: subtitles, entry descriptions */
+  --gray-light: rgb(51, 51, 52);   /* tertiary text: captions, paper authors/venue, notes */
+}
+
+#quarto-header .navbar {
+  --bs-navbar-color:        #111;     /* the page links */
+  --bs-navbar-active-color: #2761e3;  /* the link for the page you're on */
+  --bs-navbar-hover-color:  #2761e3;  /* a link while the mouse is over it */
+  --bs-navbar-brand-color:  #111;   /* "Yuval Amit" on the left */
+  font-weight: 700; 
+  & .navbar-title {
+    font-weight: 700;                 /* bold "Yuval Amit" */
+  }
+}
 /* --- homepage --- */
-.subtitle-lines { color: #555; line-height: 1.5; margin-bottom: 1.75rem; }
+.subtitle-lines { color: var(--gray-dark); line-height: 1.5; margin-bottom: 1.75rem; }
 
 .about { display: flex; gap: 2.5rem; align-items: flex-start; }
 .about-text { flex: 1 1 auto; min-width: 0; }
 .about-photo { flex: 0 0 10rem; }
 .about-photo figure { margin: .3rem 0 0; }
-.about-photo figcaption { font-size: .85rem; color: #6b6b6b; text-align: center; }
+.about-photo figcaption { font-size: .85rem; color: var(--gray-light); text-align: center; }
 
 @media (max-width: 576px) {
   .about { flex-direction: column-reverse; align-items: center; gap: 1.5rem; }
@@ -17,15 +34,15 @@
 
 /* --- papers (Research page) --- */
 .paper { margin-bottom: 1.6rem; }
-.paper-title { font-size: 1.06em; }
+.paper-title { font-size: 1.02em; }
 .paper-authors,
-.paper-venue { color: #6b6b6b; font-size: .92em; }
+.paper-venue { color: var(--gray-light); font-size: .85em; }
 .paper-blurb { margin-top: .2rem; }
 
 /* --- lists of entries: courses, links --- */
 .entry { margin-bottom: 1.25rem; }
-.entry p { color: #555; }
-.source-note { color: #6b6b6b; margin-top: 1.5rem; }
+.entry p { color: var(--gray-dark); }
+.source-note { color: var(--gray-light); margin-top: 1.5rem; }
 
 /* --- misc --- */
-.remark { color: #6b6b6b; }
+.remark { color: var(--gray-light); }

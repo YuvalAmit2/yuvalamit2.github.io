@@ -55,6 +55,10 @@ local function venue_line(ref)
   else
     parts:insert(pandoc.Str("Preprint"))
   end
+  local year = (str(ref.issued) or ""):match("%d%d%d%d")
+  if year then
+    parts:extend{ pandoc.Space(), pandoc.Str("(" .. year .. ")") }
+  end
   local id = arxiv_id(ref)
   if id then
     parts:extend{ pandoc.Str(","), pandoc.Space(),
