@@ -1,0 +1,44 @@
+---
+title: Talks
+---
+
+::: {.entry}
+[Numbers, Groups, Graphs, Undergrad Research, and a 14-Year-Old Conjecture](/files/talks/math-club-2026.pdf)\
+UMD Math Club, November 2, 2026
+:::
+
+::: {.entry}
+[Breaking Universality in the Lower Order Terms in the 1-level and 2-level Density of Holomorphic Cusp Newforms](/files/talks/breaking_universality_QMC.pdf)\
+Quebec-Maine Number Theory Conference, October 3, 2026
+:::
+
+::: {.entry}
+[Ranks and Moments of (Hyper)elliptic Curve Families](/files/talks/elliptic-fourier-yale-2026.pdf)\
+Yale Undergraduate Conference, July 21, 2026
+:::
+
+::: {.entry}
+[Weighted MPTQ Sums in Finite Groups](/files/talks/CANT_MSTD_Slides_2026.pdf)\
+Combinatorial and Additive Number Theory Conference, July 13, 2026
+:::
+
+::: {.entry}
+[Random Fibonacci Tilings](/files/talks/FibConf2026_PANTHers.pdf)\
+International Conference on Fibonacci Numbers and Their Applications, July 9, 2026
+:::
+
+::: {.entry}
+[Genus Theory and Primes of the Form $x^2 + ny^2$](/files/talks/Genus_Talk_No_Pause.pdf)\
+UMD Student Algebra-Number Theory, November 18, 2025
+:::
+
+::: {.entry}
+[Elliptic Fruit: An Intro to Elliptic Curves](/files/talks/Elliptic_Fruit_Presentation.pdf)\
+UMD MATH407, November 13, 2025
+:::
+
+::: {.entry}
+[Harmonic Numbers: on the $p$-Divisibility of $H_n$](/files/talks/harmonic_numbers_2025.pdf)\
+UMD REU Talks, July 25, 2025
+:::
+

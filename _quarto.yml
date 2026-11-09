@@ -10,13 +10,15 @@ website:
   title: "Yuval Amit"
   site-url: https://yuvalamit2.github.io
   description: "Yuval Amit is a fourth year undergraduate mathematician at the University of Maryland"
-  search: false
+  search: true
   navbar:
     right:
       - text: Research
         href: research/index.qmd
       - text: Notes
         href: notes/index.qmd
+      - text: Talks
+        href: talks/index.qmd
       # - text: Outreach
       #   href: outreach/index.qmd
       - text: Miscellany

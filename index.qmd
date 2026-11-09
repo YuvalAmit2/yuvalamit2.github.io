@@ -45,7 +45,7 @@ LaTeX template ([yalatex](https://github.com/YuvalAmit2/yalatex)), playing board
 :::
 
 ::: {.about-photo}
-![Herstmonceux, UK](images/yuval-owl.jpg){fig-alt="Yuval with an owl perched on his shoulder"}
+![Long-eared owl \ Herstmonceux, UK](files/images/yuval-owl.jpg){fig-alt="Yuval with an owl perched on his shoulder"}
 :::
 
 ::::
