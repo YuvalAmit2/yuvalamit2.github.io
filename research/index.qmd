@@ -5,6 +5,10 @@ title: Research
 I'm interested in algebraic number theory and arithmetic geometry, but as
 a young mathematician that's always subject to change :)
 
+
+
 ## Papers
+
+All my papers are [available on arXiv](https://arxiv.org/a/amit_y_1.html).
 
 {{< papers papers.bib >}}
