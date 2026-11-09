@@ -1,6 +1,6 @@
 # yuvalamit2.github.io
 
-Personal website, built with [Quarto](https://quarto.org) and published to GitHub Pages
+<!-- Personal website, built with [Quarto](https://quarto.org) and published to GitHub Pages
 automatically (see `.github/workflows/publish.yml`) whenever `main` is pushed.
 
 ## Editing
@@ -21,4 +21,4 @@ The list is built by `_papers.lua`.
 
 ## Adding a course to the Notes page
 
-Copy one of the `::: {.entry}` blocks in `notes/index.qmd` and edit it.
+Copy one of the `::: {.entry}` blocks in `notes/index.qmd` and edit it. -->
