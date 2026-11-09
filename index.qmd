@@ -23,7 +23,7 @@ include-in-header:
 Undergraduate math major\
 Department of Mathematics, University of Maryland\
 yamit \| at \| umd \| dot \| edu\
-[CV](/cv/cv.pdf){target="_blank"} (Last updated 10/3/26)
+[CV](/cv/cv.pdf){target="_blank"} (Last updated Oct 3, 2026)
 :::
 
 <!-- yamit X umd Y edu, where
