@@ -37,7 +37,6 @@ Y = the derivative notation of a physicist. -->
 ::: {.about-text}
 I am a fourth-year mathematics student at the University of Maryland (UMD).
 My primary interests are algebraic number theory and arithmetic geometry.
-I love teaching math and communicating its beauty.
 
 I also enjoy watching theater (*Cabaret*, *Falsettos*), endlessly customizing my
 LaTeX template ([yalatex](https://github.com/YuvalAmit2/yalatex)), playing board games
