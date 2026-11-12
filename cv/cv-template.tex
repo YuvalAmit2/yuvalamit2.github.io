@@ -44,10 +44,12 @@
 % Section headings
 % ---------------------------------------------------------------
 \usepackage{titlesec}
-\titleformat{\section}{\Large\color{titlecolor}}{}{0pt}{}[\color{black}\vspace{-2pt}\titlerule]
+\titleformat{\section}{\Large\color{titlecolor}}{}{0pt}{}[\color{black}\vspace{-0.5pt}\titlerule]
 \titleformat{\subsection}{\large\color{titlecolor}}{}{0pt}{}[\vspace{-2pt}]
+\titlespacing*{\section}{0pt}{2.25ex plus 0.5ex minus 0.2ex}{2.3ex plus 0.2ex}
+\titlespacing*{\subsection}{0pt}{2ex plus 0.5ex minus 0.2ex}{1.5ex plus 0.2ex}
 
-% ---------------------------------------------------------------
+% --------------------------A-------------------------------------
 % Lists
 % ---------------------------------------------------------------
 \newlist{cvlist}{itemize}{1}
