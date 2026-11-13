@@ -3,7 +3,7 @@
 
 /* --- general styles --- */
 :root {
-  --bs-body-color: #111;
+  --bs-body-color: #000000;
   --gray-dark:  #28282a;      /* secondary text: subtitles, entry descriptions */
   --gray-light: rgb(51, 51, 52);   /* tertiary text: captions, paper authors/venue, notes */
   --bs-body-bg: #ffffff;  /* background color */
