@@ -1,31 +1,33 @@
-% Packages actually used by the CV
+% Packages used by the CV
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[shortlabels]{enumitem}
-% \usepackage{mathpazo}
-\usepackage{ya-fonts-xcharter}
+\usepackage{ya-fonts-xcharter} % Custom font
 
+% Colors
+\definecolor{cvgray}{RGB}{76,78,81}
+\definecolor{cvtitleblue}{RGB}{11,7,148}
+\definecolor{urlblue}{RGB}{21,14,217}
 
 % Page dimensions
 \usepackage[paperheight=11in,
    paperwidth=8.5in,
    top=10mm,
    bottom=20mm,
-   left=26mm,
-   right=26mm]{geometry}
+   left=20mm,
+   right=20mm]{geometry}
 
 \usepackage[]{parskip} % Paragraph spacing
 
-% Accent color (section headings and links)
-\definecolor{titlecolor}{RGB}{31, 27, 148}
+
 
 % Links (load last)
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
-  linkcolor=titlecolor,
-  urlcolor=titlecolor,
+  linkcolor=urlblue,
+  urlcolor=urlblue,
   pdftitle={Yuval Amit -- CV},
   pdfauthor={Yuval Amit}
 }
@@ -34,7 +36,7 @@
 % Title block
 % ---------------------------------------------------------------
 \usepackage{titling}
-\pretitle{\huge}
+\pretitle{\Huge}
 \posttitle{\par\vspace{0pt}}
 \preauthor{\normalsize}
 \postauthor{\par\vspace{4pt}}
@@ -44,8 +46,8 @@
 % Section headings
 % ---------------------------------------------------------------
 \usepackage{titlesec}
-\titleformat{\section}{\Large\color{titlecolor}}{}{0pt}{}[\color{black}\vspace{-0.5pt}\titlerule]
-\titleformat{\subsection}{\large\color{titlecolor}}{}{0pt}{}[\vspace{-2pt}]
+\titleformat{\section}{\Large\color{cvtitleblue}}{}{0pt}{}[\color{black}\vspace{-0.5pt}\titlerule]
+\titleformat{\subsection}{\large\color{cvtitleblue}}{}{0pt}{}[\vspace{-2pt}]
 \titlespacing*{\section}{0pt}{2.25ex plus 0.5ex minus 0.2ex}{2.3ex plus 0.2ex}
 \titlespacing*{\subsection}{0pt}{2ex plus 0.5ex minus 0.2ex}{1.5ex plus 0.2ex}
 
@@ -85,7 +87,7 @@
 
 % \boldentry{Title}{Date}{Description}
 \newcommand{\boldentry}[3]{%
-  \item \cvline{\textbf{#1}}{#2}\cvdesc{#3}%
+  \item \cvline{{#1}}{#2}\cvdesc{#3}%
 }
 
 % \talk{Talk title}{Venue}{Date}
@@ -100,12 +102,58 @@
   \item \cvline{#1, #2}{#3}%
 }
 
-% \paper[link]{Title}{Status}
-%   Optional first argument: a URL (e.g. the arXiv abstract page),
-%   printed on an indented line below the title.
-\newcommand{\paper}[3][]{%
-  \item \cvline{\textit{#2}}{#3}%
-  \if\relax\detokenize{#1}\relax\else
-    \cvdesc{\href{#1}{#1}}%
-  \fi
+% ---------------------------------------------------------------
+% Papers, read from a .bib file (\addbibresource{...} in cv.tex)
+%
+%   Preprint:  Title [arXiv, year]
+%   Published: Title [arXiv] [Journal, year]
+%              With coauthors (smaller, gray)
+%
+%   arXiv link:   from the eprint field (arxiv.org/abs/<eprint>)
+%   Journal link: from the doi field (doi.org/<doi>), if there is one
+%   A paper counts as published when it has a journal field.
+%   Coauthors: every author except me (\cvmegiven, \cvmefamily below).
+% ---------------------------------------------------------------
+\usepackage[backend=biber, sorting=none, maxnames=999, minnames=999]{biblatex}
+
+\newcommand{\cvmegiven}{Yuval}
+\newcommand{\cvmefamily}{Amit}
+
+% Each paper is one cvlist item; papers appear in .bib file order
+\defbibenvironment{cvpapers}{\begin{cvlist}}{\end{cvlist}}{\item}
+
+% Names: count / print every author except me, comma separated
+\newcounter{cvcoauthors}
+\newcommand{\cvifme}[2]{%
+  \ifboolexpr{test {\ifdefstrequal{\namepartgiven}{\cvmegiven}} and
+              test {\ifdefstrequal{\namepartfamily}{\cvmefamily}}}{#1}{#2}}
+\DeclareNameFormat{cvcount}{\cvifme{}{\stepcounter{cvcoauthors}}}
+\DeclareNameFormat{cvcoauthors}{%
+  \cvifme{}{%
+    \ifnumgreater{\value{cvcoauthors}}{0}{, }{}%
+    \stepcounter{cvcoauthors}%
+    \mbox{\namepartgiven\space\namepartfamily}}}
+
+\newbibmacro{cvpaper}{%
+  % Line 1: title and links
+  {\rightskip=0pt plus 4em\relax\parshape=0 \hangindent=1em\hangafter=1\relax
+   \textit{\thefield{title}}%
+   \iffieldundef{eprint}{}{%
+     \space[\href{https://arxiv.org/abs/\thefield{eprint}}{arXiv}%
+     \iffieldundef{journaltitle}{, \thefield{year}}{}]}%
+   \iffieldundef{journaltitle}{}{%
+     \space[\iffieldundef{doi}
+       {\thefield{journaltitle}}
+       {\href{https://doi.org/\thefield{doi}}{\thefield{journaltitle}}}%
+     , \thefield{year}]}%
+   \par}%
+  % Line 2: coauthors (skipped for a single-author paper)
+  \setcounter{cvcoauthors}{0}%
+  \printnames[cvcount]{author}%
+  \ifnumgreater{\value{cvcoauthors}}{0}{%
+    \setcounter{cvcoauthors}{0}%
+    \cvdesc{\small\color{cvgray}\rightskip=0pt plus 1fil\relax
+      With \printnames[cvcoauthors]{author}\par}}{}%
 }
+\DeclareBibliographyDriver{misc}{\usebibmacro{cvpaper}}
+\DeclareBibliographyDriver{article}{\usebibmacro{cvpaper}}
