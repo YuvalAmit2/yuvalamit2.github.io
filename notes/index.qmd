@@ -10,21 +10,21 @@ Feel free to reach out if you find a typo (big or small).
 #### **Fall 2026 (In Progress)**
 
 ::: {.course}
-[**MATH730: Algebraic Topology I**](/yuvals-notes/math730-notes/math730-notes.pdf){target="_blank"}\
+**MATH730: Algebraic Topology I** [[PDF](/yuvals-notes/math730-notes/math730-notes.pdf){target="_blank"}[HTML](/yuvals-notes/math730-notes/html/){target="_blank"}]{.course-links}\
 [Lectures by Or Hershkovitz, based on *Algebraic Topology* by Hatcher]{.course-info}
 
 **Topics:** CW complexes; fundamental group; covering spaces; simplicial, singular, and cellular homology.
 :::
 
 ::: {.course}
-[**MATH606: Complex Algebraic Geometry**](/yuvals-notes/math606-notes/math606-notes.pdf){target="_blank"}\
+**MATH606: Complex Algebraic Geometry** [[PDF](/yuvals-notes/math606-notes/math606-notes.pdf){target="_blank"}[HTML](/yuvals-notes/math606-notes/html/){target="_blank"}]{.course-links}\
 [Lectures by Harry Tamvakis, based on *Compact Riemann Surfaces* by Narasimhan]{.course-info}
 
 **Topics:** Riemann surfaces; elliptic functions; the Riemann surface of an algebraic function; Čech cohomology; vector bundles; divisors; Riemann–Roch; Serre duality.
 :::
 
 ::: {.course}
-[**STAT410: Intro to Probability Theory**](/yuvals-notes/stat410-notes/STAT410-Notes.pdf){target="_blank"}\
+**STAT410: Intro to Probability Theory** [[PDF](/yuvals-notes/stat410-notes/STAT410-Notes.pdf){target="_blank"}[HTML](/yuvals-notes/stat410-notes/html/){target="_blank"}]{.course-links}\
 [Lectures by Mestiyage D. Gunatilleka, based on *Intro to Probability* by Anderson]{.course-info}
 
 **Topics:** Basic facts about σ-algebras and probability measures; conditional probability; random variables; expectation; central limit theorem; law of large numbers.
@@ -33,7 +33,7 @@ Feel free to reach out if you find a typo (big or small).
 #### **Spring 2026**
 
 ::: {.course}
-[**MATH601: Abstract Algebra II**](/yuvals-notes/math601-notes/math601-notes.pdf){target="_blank"}\
+**MATH601: Abstract Algebra II** [[PDF](/yuvals-notes/math601-notes/math601-notes.pdf){target="_blank"}[HTML](/yuvals-notes/math601-notes/html/){target="_blank"}]{.course-links}\
 [Lectures by Harry Tamvakis, based on *Abstract Algebra* by Dummit and Foote]{.course-info}
 
 **Topics:** Exterior powers; FGMs over PIDs; bilinear forms; categories; Yoneda's lemma; projective, injective, and flat modules; homological algebra; Ext and Tor; Galois theory; solvability by radicals; representations; Schur's lemma; character tables and orthogonality relations; Burnside's theorem; additional topics in rep. theory.
@@ -42,14 +42,14 @@ Feel free to reach out if you find a typo (big or small).
 #### **Fall 2025**
 
 ::: {.course}
-[**MATH600: Abstract Algebra I**](/yuvals-notes/math600-notes/math600-notes.pdf){target="_blank"}\
+**MATH600: Abstract Algebra I** [[PDF](/yuvals-notes/math600-notes/math600-notes.pdf){target="_blank"}[HTML](/yuvals-notes/math600-notes/html/){target="_blank"}]{.course-links}\
 [Lectures by Harry Tamvakis, based on *Abstract Algebra* by Dummit and Foote]{.course-info}
 
 **Topics:** Vector spaces; universal properties; groups; the class equation; Sylow theorems; finite simple groups; semidirect products; free and Coxeter groups; rings; various types of domains; CRT; Noetherian rings; classical algebraic geometry; Nullstellensatz; ideal-variety correspondence; modules and algebras; tensor products; tensor and symmetric algebras
 :::
 
 ::: {.course}
-[**MATH407: Advanced Number Theory**](/yuvals-notes/math407-notes/math407-notes.pdf){target="_blank"}\
+**MATH407: Advanced Number Theory** [[PDF](/yuvals-notes/math407-notes/math407-notes.pdf){target="_blank"}[HTML](/yuvals-notes/math407-notes/html/){target="_blank"}]{.course-links}\
 [Lectures by Niranjan Ramachandran, based on *A Course in Arithmetic* by Serre]{.course-info}
 
 **Topics:** Finite fields; Chevalley-Warning; quadratic reciprocity; p-adic numbers; Hensel's lemma; the Hilbert symbol; characters; Dirichlet's theorem

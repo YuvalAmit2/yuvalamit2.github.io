@@ -59,6 +59,8 @@ a:hover {
 .course p { margin-bottom: 0; color: var(--gray-dark); }
 /* .course p:first-child { line-height: 1.2; }   tighter gap between lines 1 and 2 */
 .course p + p { margin-top: .1rem; }          /* space between lines 2 and 3 */
+.course-links { margin-left: .9em; }           /* "PDF · HTML" after a course name */
+.course-links a + a::before { content: "·"; display: inline-block; margin: 0 .4em; color: var(--gray-light); }
 .course-info { display: block; margin-left: 0em; font-size: .85em; color: var(--gray-light); }
 .source-note { color: var(--gray-light); margin-top: 1.5rem; }
 
