@@ -2,10 +2,22 @@
 title: Notes
 ---
 
+
+This is a collection of typeset lecture notes I've taken over the years. The primary purpose of these notes is to act as a reference for lecture material for me and my fellow students. There may be a number of errors in these notes, so using them as a reference, especially outside of the context of this course, should be done cautiously. I am responsible for all such errors, and not the lecturer. If you find an error, you are encouraged to [anonymously report it](https://docs.google.com/forms/d/e/1FAIpQLSdhZbMDXPyvQ3KKiL1MLr5d0WGBrnASU8-LFDA73ICSnwH_Og/viewform?usp=publish-editor)!
+
+All notes are available in a standard PDF format, as well as an interactive HTML format made using [tex4ht](https://tug.org/tex4ht/). This HTML has helpful features like
+
+- Hovering over references and definitions makes them pop up
+- Searching works well with LaTeX
+- Theorems, proofs, sections, and chapters are collapsible
+
+The HTML converter is still in development and may have bugs.
+
 ## Course Notes
 
-Lecture notes from some courses I've taken over the years.
-Feel free to reach out if you find a typo (big or small).
+
+
+
 
 #### **Fall 2026 (In Progress)**
 
